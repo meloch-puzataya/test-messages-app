@@ -1,5 +1,5 @@
-use actix_web::{get, App, HttpResponse, HttpServer, Responder};
-use serde::Serialize;
+use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
+use serde::{Deserialize, Serialize};
 use sqlx::postgres::PgPoolOptions;
 use std::env;
 use dotenv::dotenv;
